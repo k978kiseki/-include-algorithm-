@@ -4,7 +4,7 @@
 #include <cstring>
 using namespace std;
 
-const int N = 3e6 + 5;
+const int N = 3e6 + 5; //输入字符串的总长度
 int trie[N][62], sum[N], cntEnd[N];
 int GetNum(char x) {
 	if (x >= 'A' && x <= 'Z')
@@ -58,7 +58,8 @@ int main() {
 		}
 		while (q--) {
 			cin >> t;
-			cout << QueryPrefix(t) << '\n'; //看题目要求调用对应方法
+			cout << Query(t) << '\n'; //查找字符串t的个数
+			//cout << QueryPrefix(t) << '\n'; //以t作为前缀串查找
 		}
 	}
 }

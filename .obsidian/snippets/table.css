@@ -1,0 +1,11 @@
+/* 表头居中：阅读视图和实时预览 */
+.markdown-rendered table th,
+.markdown-source-view.mod-cm6 table th {
+    text-align: center !important;
+}
+
+/* 表格内容左对齐：阅读视图和实时预览 */
+.markdown-rendered table td,
+.markdown-source-view.mod-cm6 table td {
+    text-align: left !important;
+}
